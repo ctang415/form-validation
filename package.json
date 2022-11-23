@@ -25,6 +25,7 @@
     "webpack-cli": "^5.0.0"
   },
   "dependencies": {
-    "countries-list": "^2.6.1"
+    "countries-list": "^2.6.1",
+    "zip-it": "^1.2.1"
   }
 }
