@@ -1,21 +1,39 @@
-select, input {
+input {
     width: 15rem;
     height: 1.5rem;
  }
+select {
+    width: 15rem;
+    height: 2rem;
+ }
+
+ body {
+    background-color: aliceblue;
+ }
+
+.box {
+    background-color: white;
+    border: solid grey;
+    margin-top: 10rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    padding-bottom: 2rem;
+    border-radius: 0.5rem;
+ }
 
 .myform {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
 
 .firstcolumn, .secondcolumn {
     display: flex;
     flex-direction: column;
-    justify-items: center;
     text-align: left;
  }
 
- .input {
+.input {
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -26,4 +44,5 @@ select, input {
     display: flex;
     justify-content: center;
     font-size: 2rem;
+    padding: 2rem;
  }
