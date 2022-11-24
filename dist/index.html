@@ -14,35 +14,39 @@
                 <div class="firstcolumn">
                     <div class="input">
                         <label for="username">Username</label>
-                        <input type="text" id="username" name="username" pattern="^[a-zA-Z0-9_]*$
-                        ">
+                        <input type="text" id="username" name="username" minlength="2" pattern="^[a-zA-Z0-9_]*$">
+                        <span class="error" aria-live="polite"></span>
                     </div>
                     <div class="input">
                         <label for="country">Country</label>
-                        <select name="country" id="country"></select>
+                        <select name="country" id="country" value="AD"></select>
                     </div>
                     <div class="input">
                         <label for="password">Password</label>
                         <input type="password" id="password" name="password" minlength="8">
+                        <span class="error" aria-live="polite"></span>
                     </div>
                 </div>
                 <div class="secondcolumn">
                     <div class="input">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="you@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+                        <input type="email" id="email" name="email" placeholder="you@example.com" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$">
+                        <span class="error" aria-live="polite"></span>
                     </div>
                     <div class="input">
                         <label for="zipcode">Zipcode</label>
-                        <input type="number" id="zipcode" name="zipcode">
+                        <input type="text" id="zipcode" name="zipcode">
+                        <span class="error" aria-live="polite"></span>
                     </div>
                     <div class="input">
                         <label for="passwordconfirm">Password Confirmation</label>
                         <input type="password" name="password" id="passwordconfirm">
+                        <span class="error" aria-live="polite"></span>
                     </div>
                 </div>
             </div>
                 <div class="button">
-                    <button type="submit">Create account</button>
+                    <button type="submit" id="button" value="button">Create account</button>
                 </div>
             </form>
         </div>
